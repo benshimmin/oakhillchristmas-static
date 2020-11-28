@@ -159,6 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
         oTop += 30;
       }
 
+      if ('ontouchstart' in document.documentElement) {
+        oTop += 25;
+      }
+
       element.classList.add("is-hidden");
       window.scroll({
         top: oTop,
@@ -2200,4 +2204,4 @@ module.exports = function (module) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application-0937880708e27cab5609.js.map
+//# sourceMappingURL=application-1e810f1179e7f2b15173.js.map

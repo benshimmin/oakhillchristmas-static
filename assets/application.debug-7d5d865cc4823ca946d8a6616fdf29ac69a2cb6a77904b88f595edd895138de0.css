@@ -554,16 +554,20 @@ a:hover {
 @media only screen and (max-width: 900px) {
   /* line 45, app/assets/stylesheets/layout.scss */
   .hero .icon-scroll-down {
-    bottom: 20px;
+    bottom: 75px;
+  }
+  /* line 57, app/assets/stylesheets/layout.scss */
+  .hero .icon-scroll-down:after, .hero .icon-scroll-down:before {
+    filter: grayscale(0%) !important;
   }
 }
 
-/* line 59, app/assets/stylesheets/layout.scss */
+/* line 63, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down.is-hidden {
   opacity: 0;
 }
 
-/* line 63, app/assets/stylesheets/layout.scss */
+/* line 67, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:after, .hero .icon-scroll-down:before {
   filter: grayscale(100%);
   content: "";
@@ -573,7 +577,7 @@ a:hover {
   transition: all 0.3s;
 }
 
-/* line 72, app/assets/stylesheets/layout.scss */
+/* line 76, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:after {
   top: 0;
   left: -15px;
@@ -584,7 +588,7 @@ a:hover {
   animation: swing-l ease-in-out 1s infinite alternate;
 }
 
-/* line 82, app/assets/stylesheets/layout.scss */
+/* line 86, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:before {
   top: 5px;
   left: 25px;
@@ -594,63 +598,63 @@ a:hover {
   animation: swing-r ease-in-out 0.8s infinite alternate;
 }
 
-/* line 91, app/assets/stylesheets/layout.scss */
+/* line 95, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:hover {
   opacity: 1;
   text-decoration: none;
   background-position: center 5px;
 }
 
-/* line 96, app/assets/stylesheets/layout.scss */
+/* line 100, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:hover:before, .hero .icon-scroll-down:hover:after {
   filter: grayscale(0%);
 }
 
-/* line 100, app/assets/stylesheets/layout.scss */
+/* line 104, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:hover:after {
   animation: swing-l-more ease-in-out 0.7s infinite alternate;
 }
 
-/* line 103, app/assets/stylesheets/layout.scss */
+/* line 107, app/assets/stylesheets/layout.scss */
 .hero .icon-scroll-down:hover:before {
   filter: grayscale(0%);
   animation: swing-r-more ease-in-out 0.6s infinite alternate;
 }
 
-/* line 112, app/assets/stylesheets/layout.scss */
+/* line 116, app/assets/stylesheets/layout.scss */
 .hero h1 {
   font-size: 5em;
 }
 
-/* line 115, app/assets/stylesheets/layout.scss */
+/* line 119, app/assets/stylesheets/layout.scss */
 .hero h2 {
   font-size: 3em;
 }
 
 @media only screen and (max-width: 900px) {
-  /* line 120, app/assets/stylesheets/layout.scss */
+  /* line 124, app/assets/stylesheets/layout.scss */
   .hero h1 {
     font-size: 2.4em;
   }
-  /* line 123, app/assets/stylesheets/layout.scss */
+  /* line 127, app/assets/stylesheets/layout.scss */
   .hero h2 {
     font-size: 1.6em;
   }
 }
 
-/* line 130, app/assets/stylesheets/layout.scss */
+/* line 134, app/assets/stylesheets/layout.scss */
 div:not(.home) .hero .icon-scroll-down {
   transform: translate(-50px);
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 129, app/assets/stylesheets/layout.scss */
+  /* line 133, app/assets/stylesheets/layout.scss */
   div:not(.home) .hero {
     border: none;
   }
 }
 
-/* line 139, app/assets/stylesheets/layout.scss */
+/* line 143, app/assets/stylesheets/layout.scss */
 div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
   position: relative;
   left: -50px;
@@ -660,24 +664,24 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 149, app/assets/stylesheets/layout.scss */
+  /* line 153, app/assets/stylesheets/layout.scss */
   div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
     left: 0;
   }
-  /* line 153, app/assets/stylesheets/layout.scss */
+  /* line 157, app/assets/stylesheets/layout.scss */
   div:not(.home) .hero .icon-scroll-down {
     transform: translate(0);
   }
 }
 
-/* line 159, app/assets/stylesheets/layout.scss */
+/* line 163, app/assets/stylesheets/layout.scss */
 .outro {
   border-top: 1px solid #e1e2e3;
   margin-top: 50px;
   padding-top: 50px;
 }
 
-/* line 164, app/assets/stylesheets/layout.scss */
+/* line 168, app/assets/stylesheets/layout.scss */
 .outro p:first-child {
   color: #5bb69b;
   font-family: "Cormorant", serif;
@@ -685,26 +689,26 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 164, app/assets/stylesheets/layout.scss */
+  /* line 168, app/assets/stylesheets/layout.scss */
   .outro p:first-child {
     line-height: 1.2em;
   }
 }
 
-/* line 172, app/assets/stylesheets/layout.scss */
+/* line 176, app/assets/stylesheets/layout.scss */
 .outro strong {
   margin-left: 1em;
   color: #999;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 172, app/assets/stylesheets/layout.scss */
+  /* line 176, app/assets/stylesheets/layout.scss */
   .outro strong {
     margin-left: 0;
   }
 }
 
-/* line 181, app/assets/stylesheets/layout.scss */
+/* line 185, app/assets/stylesheets/layout.scss */
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
   box-shadow: none !important;
@@ -1154,4 +1158,4 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
 
  */
 
-/*# sourceMappingURL=application.css-b4fe8fec401a09518b8c33796be984a2be8493ac871b146c56fe8565927dbc8f.map */
+/*# sourceMappingURL=application.css-58ff99dbdaa4e62e4573eab2e98dba1136ec2d7929be9911df72a1fcb56a90c9.map */
