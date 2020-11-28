@@ -1,0 +1,1157 @@
+/* line 1, app/assets/stylesheets/components/footer.scss */
+body > footer {
+  background: linear-gradient(to bottom, #050000, #303030);
+  padding: 100px 0;
+}
+
+/* line 5, app/assets/stylesheets/components/footer.scss */
+body > footer p {
+  color: #a0a0a0;
+}
+
+/* line 9, app/assets/stylesheets/components/footer.scss */
+body > footer a,
+body > footer strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 14, app/assets/stylesheets/components/footer.scss */
+body > footer a {
+  transition: all 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+/* line 19, app/assets/stylesheets/components/footer.scss */
+body > footer a:hover {
+  color: #d13e48;
+  text-decoration: none;
+  border-bottom: 2px solid #d13e48;
+}
+
+/* line 26, app/assets/stylesheets/components/footer.scss */
+body > footer ul {
+  list-style-type: none;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+
+/* line 30, app/assets/stylesheets/components/footer.scss */
+body > footer ul li {
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
+/* line 34, app/assets/stylesheets/components/footer.scss */
+body > footer ul li:after {
+  content: "/";
+  padding: 0 15px;
+  color: #999;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 34, app/assets/stylesheets/components/footer.scss */
+  body > footer ul li:after {
+    padding-right: 10px;
+  }
+}
+
+/* line 42, app/assets/stylesheets/components/footer.scss */
+body > footer ul li:last-child:after {
+  display: none;
+}
+
+/* line 46, app/assets/stylesheets/components/footer.scss */
+body > footer ul a {
+  text-decoration: none;
+}
+/* line 1, app/assets/stylesheets/components/header.scss */
+body > header {
+  background: linear-gradient(to bottom, rgba(0, 0, 40, 0.5), rgba(0, 0, 40, 0.04));
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 18px -5px rgba(255, 255, 255, 0.4);
+}
+
+/* line 8, app/assets/stylesheets/components/header.scss */
+body > header .navbar {
+  justify-content: flex-end;
+}
+
+/* line 11, app/assets/stylesheets/components/header.scss */
+body > header .navbar .home {
+  position: relative;
+  width: 330px;
+  height: 80px;
+  margin-right: auto;
+  background: url(icon_oakhillmethodist-43dc48744e11cd020ca4bc5d33fd8fbf3ee0c65a6393730b278d8ad0dd8c7bb1.svg) 150px 26px no-repeat;
+  background-size: 100px;
+}
+
+/* line 19, app/assets/stylesheets/components/header.scss */
+body > header .navbar .home:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 80px;
+  background: url(beaconlogo-e38c79e19890d33f6c426a3efb6bc62dceaf33c90a90537043b60886504a97bd.png) 0 20px no-repeat;
+  background-size: 115px;
+}
+
+/* line 29, app/assets/stylesheets/components/header.scss */
+body > header .navbar a:not(:first-child) {
+  color: #fff;
+  margin-left: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 5px solid transparent;
+}
+
+/* line 37, app/assets/stylesheets/components/header.scss */
+body > header .navbar a:not(:first-child):hover {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 41, app/assets/stylesheets/components/header.scss */
+body > header .navbar a.active:not(:first-child) {
+  border-bottom: 5px solid #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  /* line 48, app/assets/stylesheets/components/header.scss */
+  body > header .navbar {
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+  /* line 53, app/assets/stylesheets/components/header.scss */
+  body > header .navbar .home {
+    height: 33px;
+    width: 100%;
+    background-size: 80px;
+    background-position: 100% 0;
+    overflow: hidden;
+  }
+  /* line 60, app/assets/stylesheets/components/header.scss */
+  body > header .navbar .home:after {
+    background-position: 0 0;
+    background-size: 80px;
+    height: 80px;
+  }
+  /* line 66, app/assets/stylesheets/components/header.scss */
+  body > header .navbar a:not(:first-child) {
+    margin: 0;
+  }
+}
+/* line 1, app/assets/stylesheets/fonts.scss */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* line 6, app/assets/stylesheets/fonts.scss */
+h1, h2 {
+  font-family: 'Cormorant', serif;
+}
+
+/* line 9, app/assets/stylesheets/fonts.scss */
+h1 {
+  font-weight: 700;
+}
+
+/* line 12, app/assets/stylesheets/fonts.scss */
+h2 {
+  font-weight: 500;
+}
+
+/* line 16, app/assets/stylesheets/fonts.scss */
+.intro {
+  font-family: 'Cormorant', serif;
+}
+/* line 2, app/assets/stylesheets/home.scss */
+.home .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 9, app/assets/stylesheets/home.scss */
+.home .hero .video-wrapper {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+/* line 17, app/assets/stylesheets/home.scss */
+.home .hero video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  min-height: 50%;
+  min-width: 50%;
+}
+
+/* line 28, app/assets/stylesheets/home.scss */
+.home .hero .icon-sound-toggle {
+  position: absolute;
+  background: url(mute-5364257e67708235a60851506d0bcd4e90c3517e6573437192e24908f490df92.svg) center center no-repeat;
+  background-size: 35px;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+/* line 42, app/assets/stylesheets/home.scss */
+.home .hero .icon-sound-toggle:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  /* line 28, app/assets/stylesheets/home.scss */
+  .home .hero .icon-sound-toggle {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* line 51, app/assets/stylesheets/home.scss */
+.home .hero .icon-sound-toggle.toggled {
+  background-image: url(unmute-4823989c4f6d94ce5e6e7224c97d3f8c1c29c42629deff370bf113ebb94c9598.svg);
+}
+
+/* line 56, app/assets/stylesheets/home.scss */
+.home .hero h1 {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 170, 255, 0.3), 0 -5px 50px rgba(255, 255, 255, 0.4);
+}
+
+/* line 60, app/assets/stylesheets/home.scss */
+.home .hero h2 {
+  opacity: 0.8;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 204, 255, 0.3), 0 -5px 50px rgba(255, 255, 255, 0.7);
+}
+
+/* line 69, app/assets/stylesheets/home.scss */
+.home .hero .content {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 74, app/assets/stylesheets/home.scss */
+.home .hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 83, app/assets/stylesheets/home.scss */
+.home section .row {
+  margin: 0;
+}
+
+/* line 87, app/assets/stylesheets/home.scss */
+.home section .info {
+  padding: 50px;
+  padding-top: 120px;
+}
+
+/* line 91, app/assets/stylesheets/home.scss */
+.home section .info h4 {
+  font-family: 'Cormorant', serif;
+  font-size: 3em;
+}
+
+/* line 95, app/assets/stylesheets/home.scss */
+.home section .info h4 + p {
+  opacity: 0.8;
+}
+
+/* line 99, app/assets/stylesheets/home.scss */
+.home section .info .btn.btn-primary {
+  background: 0;
+  border-radius: 0;
+}
+
+/* line 105, app/assets/stylesheets/home.scss */
+.home section .impact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+/* line 111, app/assets/stylesheets/home.scss */
+.home section .impact h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+}
+
+/* line 119, app/assets/stylesheets/home.scss */
+.home section .impact:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: all 0.3s;
+  opacity: 0.95;
+}
+
+/* line 129, app/assets/stylesheets/home.scss */
+.home section .impact h1 {
+  z-index: 1;
+}
+
+/* line 134, app/assets/stylesheets/home.scss */
+.home section .impact:hover:after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* line 143, app/assets/stylesheets/home.scss */
+.home section.look .impact h1 {
+  position: relative;
+  padding: 3px 20px;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 170, 0, 0.7), 0 -10px 60px rgba(255, 0, 0, 0.5);
+}
+
+/* line 149, app/assets/stylesheets/home.scss */
+.home section.look .impact:after {
+  background: url(inn-af0397984b1eef94d970d83a034405617fbc940282250bea3e0398dc1735a48a.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* line 154, app/assets/stylesheets/home.scss */
+.home section.look .info {
+  background: #d13e48;
+  color: #fff;
+}
+
+/* line 158, app/assets/stylesheets/home.scss */
+.home section.look .info .btn.btn-primary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* line 162, app/assets/stylesheets/home.scss */
+.home section.look .info .btn.btn-primary:hover {
+  background: #fff;
+  color: #d13e48;
+}
+
+/* line 170, app/assets/stylesheets/home.scss */
+.home section.listen .impact {
+  background: #5bb69b;
+}
+
+/* line 174, app/assets/stylesheets/home.scss */
+.home section.tell {
+  background: #611823;
+}
+
+/* line 176, app/assets/stylesheets/home.scss */
+.home section.tell .info {
+  color: #fff;
+}
+
+/* line 179, app/assets/stylesheets/home.scss */
+.home section.tell .info .btn.btn-primary {
+  border: 2px solid #fff;
+}
+
+/* line 182, app/assets/stylesheets/home.scss */
+.home section.tell .info .btn.btn-primary:hover {
+  background: #fff;
+  color: #611823;
+}
+
+/* line 189, app/assets/stylesheets/home.scss */
+.home section.tell .impact h1 {
+  position: relative;
+  padding: 3px 20px;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 170, 0, 0.9), 0 -10px 60px rgba(255, 0, 0, 0.5);
+}
+
+/* line 196, app/assets/stylesheets/home.scss */
+.home section.tell .impact:after {
+  background: url(stones-a16f5ca0428bad495930660373cde389840c7b347da2ea97ac5925d01a12a84e.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* line 202, app/assets/stylesheets/home.scss */
+.home section.try {
+  background: linear-gradient(to bottom, rgba(255, 255, 0, 0.25), #e1b55d);
+}
+
+/* line 205, app/assets/stylesheets/home.scss */
+.home section.try .info .btn.btn-primary {
+  border: 2px solid #333;
+  color: #333;
+}
+
+/* line 209, app/assets/stylesheets/home.scss */
+.home section.try .info .btn.btn-primary:hover {
+  background: #333;
+  color: #e1b55d;
+}
+
+/* line 216, app/assets/stylesheets/home.scss */
+.home section.try .impact h1 {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 170, 255, 0.9), 0 -5px 50px rgba(255, 255, 255, 0.5);
+}
+
+/* line 221, app/assets/stylesheets/home.scss */
+.home section.try .impact:after {
+  background: url(church-6425b57138271208161d36c61315ac30e8aad0b478ad765550b19cc72e7b0490.jpg) center center;
+  background-size: cover;
+}
+
+/* line 227, app/assets/stylesheets/home.scss */
+.home section.thanks {
+  background: #1e230b;
+}
+
+/* line 230, app/assets/stylesheets/home.scss */
+.home section.thanks .info {
+  color: #fff;
+}
+
+/* line 232, app/assets/stylesheets/home.scss */
+.home section.thanks .info .btn.btn-primary {
+  border: 2px solid #fff;
+}
+
+/* line 235, app/assets/stylesheets/home.scss */
+.home section.thanks .info .btn.btn-primary:hover {
+  background: #fff;
+  color: #1e230b;
+}
+
+/* line 242, app/assets/stylesheets/home.scss */
+.home section.thanks .impact h1 {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(170, 255, 0, 0.9), 0 -10px 60px rgba(30, 35, 11, 0.5);
+}
+
+/* line 246, app/assets/stylesheets/home.scss */
+.home section.thanks .impact:after {
+  background: url("https://images.unsplash.com/photo-1487530903081-59e0e3331512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80") center center no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 254, app/assets/stylesheets/home.scss */
+  .home section .info {
+    padding: 20px;
+  }
+  /* line 257, app/assets/stylesheets/home.scss */
+  .home section .info h4 {
+    font-size: 2.5em;
+  }
+  /* line 261, app/assets/stylesheets/home.scss */
+  .home section:nth-child(odd) .row {
+    flex-direction: column-reverse;
+  }
+}
+/* line 1, app/assets/stylesheets/layout.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 6, app/assets/stylesheets/layout.scss */
+main {
+  flex: 1 0 auto;
+}
+
+/* line 10, app/assets/stylesheets/layout.scss */
+main + footer {
+  flex-shrink: 0;
+}
+
+/* line 14, app/assets/stylesheets/layout.scss */
+a {
+  font-weight: 500;
+  transition: all 0.3s;
+  color: #d13e48;
+}
+
+/* line 19, app/assets/stylesheets/layout.scss */
+a:hover {
+  text-decoration: none;
+  color: #882128;
+}
+
+@keyframes swing-l {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes swing-l-more {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes swing-r {
+  0% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(13deg);
+  }
+}
+
+@keyframes swing-r-more {
+  0% {
+    transform: rotate(-22deg);
+  }
+  100% {
+    transform: rotate(16deg);
+  }
+}
+
+/* line 45, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down {
+  position: absolute;
+  bottom: 50px;
+  z-index: 5;
+  padding-top: 70px;
+  background-size: 45px;
+  color: #fff;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 900px) {
+  /* line 45, app/assets/stylesheets/layout.scss */
+  .hero .icon-scroll-down {
+    bottom: 20px;
+  }
+}
+
+/* line 59, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down.is-hidden {
+  opacity: 0;
+}
+
+/* line 63, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:after, .hero .icon-scroll-down:before {
+  filter: grayscale(100%);
+  content: "";
+  position: absolute;
+  margin: auto;
+  background: url(icon-bauble-c74b6bd36fc8f749e2b6cc3a5aa9ce2656e7539fed08ed22da3c0b937011b143.svg) center 0 no-repeat;
+  transition: all 0.3s;
+}
+
+/* line 72, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:after {
+  top: 0;
+  left: -15px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: url(icon-bauble-2-1a70179ba38b080290d1f4f4d1af831363b77a4c921c16d9c92899f4abea5eae.svg) center 0 no-repeat;
+  animation: swing-l ease-in-out 1s infinite alternate;
+}
+
+/* line 82, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:before {
+  top: 5px;
+  left: 25px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  animation: swing-r ease-in-out 0.8s infinite alternate;
+}
+
+/* line 91, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:hover {
+  opacity: 1;
+  text-decoration: none;
+  background-position: center 5px;
+}
+
+/* line 96, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:hover:before, .hero .icon-scroll-down:hover:after {
+  filter: grayscale(0%);
+}
+
+/* line 100, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:hover:after {
+  animation: swing-l-more ease-in-out 0.7s infinite alternate;
+}
+
+/* line 103, app/assets/stylesheets/layout.scss */
+.hero .icon-scroll-down:hover:before {
+  filter: grayscale(0%);
+  animation: swing-r-more ease-in-out 0.6s infinite alternate;
+}
+
+/* line 112, app/assets/stylesheets/layout.scss */
+.hero h1 {
+  font-size: 5em;
+}
+
+/* line 115, app/assets/stylesheets/layout.scss */
+.hero h2 {
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 900px) {
+  /* line 120, app/assets/stylesheets/layout.scss */
+  .hero h1 {
+    font-size: 2.4em;
+  }
+  /* line 123, app/assets/stylesheets/layout.scss */
+  .hero h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* line 130, app/assets/stylesheets/layout.scss */
+div:not(.home) .hero .icon-scroll-down {
+  transform: translate(-50px);
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 129, app/assets/stylesheets/layout.scss */
+  div:not(.home) .hero {
+    border: none;
+  }
+}
+
+/* line 139, app/assets/stylesheets/layout.scss */
+div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
+  position: relative;
+  left: -50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 149, app/assets/stylesheets/layout.scss */
+  div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
+    left: 0;
+  }
+  /* line 153, app/assets/stylesheets/layout.scss */
+  div:not(.home) .hero .icon-scroll-down {
+    transform: translate(0);
+  }
+}
+
+/* line 159, app/assets/stylesheets/layout.scss */
+.outro {
+  border-top: 1px solid #e1e2e3;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+/* line 164, app/assets/stylesheets/layout.scss */
+.outro p:first-child {
+  color: #5bb69b;
+  font-family: "Cormorant", serif;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 164, app/assets/stylesheets/layout.scss */
+  .outro p:first-child {
+    line-height: 1.2em;
+  }
+}
+
+/* line 172, app/assets/stylesheets/layout.scss */
+.outro strong {
+  margin-left: 1em;
+  color: #999;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 172, app/assets/stylesheets/layout.scss */
+  .outro strong {
+    margin-left: 0;
+  }
+}
+
+/* line 181, app/assets/stylesheets/layout.scss */
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  box-shadow: none !important;
+}
+/* line 2, app/assets/stylesheets/pages/look.scss */
+.look .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(advent-f8c046c4b3b3cb5c972d189210a047eb3d3b80bf3f8e6a92f08a7a9ff1e817b8.jpg) center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 80px solid #d13e48;
+}
+
+/* line 9, app/assets/stylesheets/pages/look.scss */
+.look .hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* line 18, app/assets/stylesheets/pages/look.scss */
+.look .hero h1 {
+  color: #fff;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.4), 0 0 40px rgba(51, 51, 51, 0.3), 0 -5px 50px rgba(255, 255, 255, 0.4);
+}
+
+/* line 23, app/assets/stylesheets/pages/look.scss */
+.look .hero h2 {
+  color: #fff;
+  opacity: 0.9;
+  text-shadow: 0 0 30px rgba(51, 51, 51, 0.8), 0 0 20px rgba(51, 51, 51, 0.7), 0 -5px 50px rgba(51, 51, 51, 0.8);
+}
+
+/* line 29, app/assets/stylesheets/pages/look.scss */
+.look .hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 38, app/assets/stylesheets/pages/look.scss */
+.look .hero .content {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 46, app/assets/stylesheets/pages/look.scss */
+.look main {
+  margin: 2em 0;
+}
+
+/* line 49, app/assets/stylesheets/pages/look.scss */
+.look main .intro {
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e1e2e3;
+  font-size: 2em;
+  color: #5bb69b;
+  line-height: 1.3em;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 49, app/assets/stylesheets/pages/look.scss */
+  .look main .intro {
+    font-size: 1.5em;
+  }
+}
+
+/* line 65, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper:not(:last-child) {
+  border-bottom: 1px solid #e1e2e3;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+/* line 71, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper .heading h3 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Cormorant', serif;
+  color: #aaa;
+}
+
+/* line 78, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper .heading h3 span {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 71, app/assets/stylesheets/pages/look.scss */
+  .look .window-wrapper .heading h3 {
+    font-size: 2.5em;
+  }
+}
+
+/* line 88, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper .window img {
+  width: 100%;
+  box-shadow: 2px 8px 26px -3px rgba(1, 2, 3, 0.35);
+  border: 1px solid #fff;
+}
+
+/* line 94, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper h4 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #999;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 94, app/assets/stylesheets/pages/look.scss */
+  .look .window-wrapper h4 {
+    margin: 1.5em 0 1em 0;
+    text-align: center;
+  }
+}
+
+/* line 105, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper .map-container {
+  position: relative;
+}
+
+/* line 108, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper .map {
+  width: 400px;
+  max-width: 100%;
+  height: 400px;
+  background: url(map-ba9a6480f7d1e0ce6f76355fe6028b9e540e952e35bb36fc25d134a0bbd153af.png) no-repeat;
+  opacity: 0.7;
+}
+
+/* line 115, app/assets/stylesheets/pages/look.scss */
+.look .window-wrapper .pin {
+  position: absolute;
+  z-index: 10;
+  width: 30px;
+  height: 39px;
+  top: 0;
+  left: 0;
+  background: url(icon-pin-cae693b6d0817ebfaef23eaa1c13ecbae2c4553590ed1039b0511aabb73162bb.svg) 0 0 no-repeat;
+}
+/* line 2, app/assets/stylesheets/pages/tell.scss */
+.tell .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(stones-a16f5ca0428bad495930660373cde389840c7b347da2ea97ac5925d01a12a84e.jpg) center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 80px solid #611823;
+}
+
+/* line 9, app/assets/stylesheets/pages/tell.scss */
+.tell .hero h1, .tell .hero h2 {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 170, 0, 0.9), 0 -10px 60px rgba(255, 0, 0, 0.5);
+}
+
+/* line 17, app/assets/stylesheets/pages/tell.scss */
+.tell .hero .content {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 24, app/assets/stylesheets/pages/tell.scss */
+.tell .hero a.icon-scroll-down {
+  color: #333;
+}
+
+/* line 29, app/assets/stylesheets/pages/tell.scss */
+.tell main {
+  margin: 2em 0;
+}
+
+/* line 32, app/assets/stylesheets/pages/tell.scss */
+.tell main .intro {
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e1e2e3;
+  font-size: 2em;
+  color: #5bb69b;
+  line-height: 1.3em;
+}
+
+/* line 42, app/assets/stylesheets/pages/tell.scss */
+.tell main .main-content {
+  padding-right: 80px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 42, app/assets/stylesheets/pages/tell.scss */
+  .tell main .main-content {
+    padding-right: 15px;
+  }
+}
+
+/* line 49, app/assets/stylesheets/pages/tell.scss */
+.tell main p.note {
+  position: relative;
+  margin-top: 2em;
+  color: #757473;
+}
+
+/* line 54, app/assets/stylesheets/pages/tell.scss */
+.tell main p.note:before {
+  display: block;
+  content: "";
+  width: 35%;
+  margin-bottom: 1.6em;
+  border-top: 1px solid #e1e2e3;
+}
+
+/* line 63, app/assets/stylesheets/pages/tell.scss */
+.tell main img {
+  max-width: 100%;
+}
+
+/* line 67, app/assets/stylesheets/pages/tell.scss */
+.tell main figcaption {
+  padding-top: 10px;
+  color: #757473;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 67, app/assets/stylesheets/pages/tell.scss */
+  .tell main figcaption {
+    text-align: center;
+  }
+}
+
+/* line 75, app/assets/stylesheets/pages/tell.scss */
+.tell main .smaller-image {
+  padding: 50px;
+}
+
+/* line 77, app/assets/stylesheets/pages/tell.scss */
+.tell main .smaller-image img {
+  box-shadow: 2px 8px 26px -3px rgba(1, 2, 3, 0.35);
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 75, app/assets/stylesheets/pages/tell.scss */
+  .tell main .smaller-image {
+    padding: 20px;
+  }
+}
+/* line 2, app/assets/stylesheets/pages/thanks.scss */
+.thanks .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1487530903081-59e0e3331512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 80px solid #1e230b;
+}
+
+/* line 9, app/assets/stylesheets/pages/thanks.scss */
+.thanks .hero h1, .thanks .hero h2 {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(51, 51, 51, 0.9), 0 -10px 60px rgba(85, 85, 85, 0.5);
+}
+
+/* line 17, app/assets/stylesheets/pages/thanks.scss */
+.thanks .hero .content {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 25, app/assets/stylesheets/pages/thanks.scss */
+.thanks main {
+  margin: 2em 0;
+}
+
+/* line 28, app/assets/stylesheets/pages/thanks.scss */
+.thanks main .intro {
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e1e2e3;
+  font-size: 2em;
+  color: #5bb69b;
+  line-height: 1.3em;
+}
+
+/* line 38, app/assets/stylesheets/pages/thanks.scss */
+.thanks main h3 {
+  font-family: 'Cormorant', serif;
+  color: #757570;
+  font-size: 2em;
+}
+
+/* line 44, app/assets/stylesheets/pages/thanks.scss */
+.thanks main ul {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 0 0 0 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 44, app/assets/stylesheets/pages/thanks.scss */
+  .thanks main ul {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* line 54, app/assets/stylesheets/pages/thanks.scss */
+.thanks main li {
+  margin-bottom: 1em;
+}
+/* line 2, app/assets/stylesheets/pages/try.scss */
+.try .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(church-6425b57138271208161d36c61315ac30e8aad0b478ad765550b19cc72e7b0490.jpg) center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 80px solid #e1b55d;
+}
+
+/* line 9, app/assets/stylesheets/pages/try.scss */
+.try .hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 18, 0.55));
+  z-index: 0;
+}
+
+/* line 19, app/assets/stylesheets/pages/try.scss */
+.try .hero h1 {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 170, 255, 0.8), 0 -5px 50px rgba(255, 255, 255, 0.4);
+}
+
+/* line 23, app/assets/stylesheets/pages/try.scss */
+.try .hero h2 {
+  opacity: 0.8;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 204, 255, 0.9), 0 -5px 50px rgba(255, 255, 255, 0.7);
+}
+
+/* line 28, app/assets/stylesheets/pages/try.scss */
+.try .hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 37, app/assets/stylesheets/pages/try.scss */
+.try .hero .content {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 45, app/assets/stylesheets/pages/try.scss */
+.try main {
+  margin: 2em 0;
+}
+
+/* line 48, app/assets/stylesheets/pages/try.scss */
+.try main .intro {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e1e2e3;
+  font-size: 3em;
+  color: #5bb69b;
+  line-height: 1.15em;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 48, app/assets/stylesheets/pages/try.scss */
+  .try main .intro {
+    font-size: 2em;
+  }
+}
+
+/* line 61, app/assets/stylesheets/pages/try.scss */
+.try main .card {
+  border: none;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 61, app/assets/stylesheets/pages/try.scss */
+  .try main .card {
+    padding: 0 0 40px 0;
+  }
+}
+
+/* line 68, app/assets/stylesheets/pages/try.scss */
+.try main .card h3 {
+  margin-bottom: 0.75em;
+  font-family: 'Cormorant', serif;
+  color: #757570;
+  font-size: 2em;
+}
+
+/* line 75, app/assets/stylesheets/pages/try.scss */
+.try main .card.connecting {
+  margin-top: 1.5em;
+  border-top: 1px solid #e1e2e3;
+  padding: 50px 0;
+}
+
+/* line 82, app/assets/stylesheets/pages/try.scss */
+.try main .with-icon {
+  padding-left: 33px;
+  background: url(icon-calendar-3250dc920556dac4b75b79ad7b41ed14fc0e5aa9930a1b1b1f088455b08a2fad.svg) 0 center no-repeat;
+  background-size: 26px;
+}
+
+/* line 88, app/assets/stylesheets/pages/try.scss */
+.try main a.with-icon {
+  line-height: 30px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*# sourceMappingURL=application.css-b4fe8fec401a09518b8c33796be984a2be8493ac871b146c56fe8565927dbc8f.map */
