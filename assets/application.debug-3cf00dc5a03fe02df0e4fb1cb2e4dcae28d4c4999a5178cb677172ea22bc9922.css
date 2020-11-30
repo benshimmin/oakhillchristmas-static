@@ -658,30 +658,36 @@ div:not(.home) .hero .icon-scroll-down {
 div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
   position: relative;
   left: -50px;
-  max-width: 600px;
+  max-width: 630px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1em;
+}
+
+/* line 151, app/assets/stylesheets/layout.scss */
+div:not(.home) .hero .content h1 {
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 153, app/assets/stylesheets/layout.scss */
+  /* line 157, app/assets/stylesheets/layout.scss */
   div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
     left: 0;
   }
-  /* line 157, app/assets/stylesheets/layout.scss */
+  /* line 161, app/assets/stylesheets/layout.scss */
   div:not(.home) .hero .icon-scroll-down {
     transform: translate(0);
   }
 }
 
-/* line 163, app/assets/stylesheets/layout.scss */
+/* line 167, app/assets/stylesheets/layout.scss */
 .outro {
   border-top: 1px solid #e1e2e3;
   margin-top: 50px;
   padding-top: 50px;
 }
 
-/* line 168, app/assets/stylesheets/layout.scss */
+/* line 172, app/assets/stylesheets/layout.scss */
 .outro p:first-child {
   color: #5bb69b;
   font-family: "Cormorant", serif;
@@ -689,26 +695,26 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 168, app/assets/stylesheets/layout.scss */
+  /* line 172, app/assets/stylesheets/layout.scss */
   .outro p:first-child {
     line-height: 1.2em;
   }
 }
 
-/* line 176, app/assets/stylesheets/layout.scss */
+/* line 180, app/assets/stylesheets/layout.scss */
 .outro strong {
   margin-left: 1em;
   color: #999;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 176, app/assets/stylesheets/layout.scss */
+  /* line 180, app/assets/stylesheets/layout.scss */
   .outro strong {
     margin-left: 0;
   }
 }
 
-/* line 185, app/assets/stylesheets/layout.scss */
+/* line 189, app/assets/stylesheets/layout.scss */
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
   box-shadow: none !important;
@@ -772,7 +778,7 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
   margin-bottom: 2em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid #e1e2e3;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #5bb69b;
   line-height: 1.3em;
 }
@@ -1008,28 +1014,28 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
   line-height: 1.3em;
 }
 
-/* line 38, app/assets/stylesheets/pages/thanks.scss */
+@media only screen and (max-width: 480px) {
+  /* line 28, app/assets/stylesheets/pages/thanks.scss */
+  .thanks main .intro {
+    font-size: 1.5em;
+  }
+}
+
+/* line 41, app/assets/stylesheets/pages/thanks.scss */
 .thanks main h3 {
   font-family: 'Cormorant', serif;
   color: #757570;
   font-size: 2em;
 }
 
-/* line 44, app/assets/stylesheets/pages/thanks.scss */
+/* line 47, app/assets/stylesheets/pages/thanks.scss */
 .thanks main ul {
   margin-top: 2em;
   margin-bottom: 3em;
   padding: 0 0 0 20px;
 }
 
-@media only screen and (max-width: 480px) {
-  /* line 44, app/assets/stylesheets/pages/thanks.scss */
-  .thanks main ul {
-    margin-bottom: 0.5em;
-  }
-}
-
-/* line 54, app/assets/stylesheets/pages/thanks.scss */
+/* line 53, app/assets/stylesheets/pages/thanks.scss */
 .thanks main li {
   margin-bottom: 1em;
 }
@@ -1140,7 +1146,15 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
 
 /* line 88, app/assets/stylesheets/pages/try.scss */
 .try main a.with-icon {
-  line-height: 30px;
+  min-height: 28px;
+}
+
+/* line 91, app/assets/stylesheets/pages/try.scss */
+.try main a.with-icon span {
+  padding-left: 33px;
+  font-weight: 300;
+  color: #212529;
+  display: block;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -1158,4 +1172,4 @@ div:not(.home) .hero .content h1, div:not(.home) .hero .content h2 {
 
  */
 
-/*# sourceMappingURL=application.css-58ff99dbdaa4e62e4573eab2e98dba1136ec2d7929be9911df72a1fcb56a90c9.map */
+/*# sourceMappingURL=application.css-dba54b46b2766db6c939ec9a80df5acf93a641925b7c4d4afd9c70fd0d9b50fe.map */
