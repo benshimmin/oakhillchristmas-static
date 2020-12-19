@@ -1171,37 +1171,50 @@ div:not(.home) .hero .content h1 {
   left: 600px;
 }
 
-/* line 122, app/assets/stylesheets/pages/tell.scss */
+@media only screen and (max-width: 480px) {
+  /* line 122, app/assets/stylesheets/pages/tell.scss */
+  .tell main .map-section .map {
+    background: url(stones/labelled-map-2f8f202ef2144826a9e07d0b45c6f9696eb88af7c5b4b55673cd9d26be5a75e5.png) 0 0 no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  /* line 127, app/assets/stylesheets/pages/tell.scss */
+  .tell main .map-section .pin {
+    display: none;
+  }
+}
+
+/* line 134, app/assets/stylesheets/pages/tell.scss */
 .tell main img {
   max-width: 100%;
 }
 
-/* line 126, app/assets/stylesheets/pages/tell.scss */
+/* line 138, app/assets/stylesheets/pages/tell.scss */
 .tell main figcaption {
   padding-top: 10px;
   color: #757473;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 126, app/assets/stylesheets/pages/tell.scss */
+  /* line 138, app/assets/stylesheets/pages/tell.scss */
   .tell main figcaption {
     text-align: center;
   }
 }
 
-/* line 134, app/assets/stylesheets/pages/tell.scss */
+/* line 146, app/assets/stylesheets/pages/tell.scss */
 .tell main .smaller-image {
   padding: 50px;
 }
 
-/* line 136, app/assets/stylesheets/pages/tell.scss */
+/* line 148, app/assets/stylesheets/pages/tell.scss */
 .tell main .smaller-image img {
   box-shadow: 2px 8px 26px -3px rgba(1, 2, 3, 0.35);
   border: 1px solid #fff;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 134, app/assets/stylesheets/pages/tell.scss */
+  /* line 146, app/assets/stylesheets/pages/tell.scss */
   .tell main .smaller-image {
     padding: 20px;
   }
@@ -1404,4 +1417,4 @@ div:not(.home) .hero .content h1 {
 
  */
 
-/*# sourceMappingURL=application.css-a40e8ae75d73255778a4c7c6bdabdfb8eb56b1d436060d2be599c6f0a533c877.map */
+/*# sourceMappingURL=application.css-6b016260a5f0c8d70d9bf8d218cbe2b794d11a6a30f48ee4db1ced0d1d611857.map */
